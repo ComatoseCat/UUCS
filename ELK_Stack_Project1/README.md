@@ -86,9 +86,9 @@ A summary of the access policies in place can be found in the table below.
 
 **- Install Docker module to pip3 -** Installs a Docker module to Python3-pip for the ELK Stack
 
-**- Increase Virtual Memory -** We need to increase virtual memory to use the ELK Stack container, so we will run this command and increase virtual memory to 262144 and will take effect upon the next system restart.
+**- Increase Virtual Memory -** We need to increase virtual memory to use the ***ELK Stack*** container, so we will run this command and increase virtual memory to ***262144*** and will take effect upon the next system restart.
 
-**- Download and launch a Docker ELK Container -** Will download the sepb/elk:761 container and start the installation process, as well as list the published ports for the ELK Stack: 5601 (Kibana), 9200 (ElasticSearch) and 5044 (Filebeat).
+**- Download and launch a Docker ELK Container -** Will download the ***sepb/elk:761*** container and start the installation process, as well as list the published ports for the *ELK Stack*: ***5601 (Kibana)***, ***9200 (ElasticSearch)*** and ***5044 (Filebeat)***.
 
 **- Enable Docker system service on boot -** Will Enable the Docker system service when the system is started
 
@@ -108,8 +108,8 @@ The following screenshot displays the result of running ***docker ps*** after su
 
 These Beats allow us to collect the following information from each machine:
 
-- ***- Filebeat -*** Collects systemwide file changes by monitoring log events and forwarding that information to ElasticSearch and LogStash for indexing and centralizing the log data.
-- ***- Metricbeat -*** Collects system metrics from services and applications that are running on the server and outputs them into *ElasticSearch* and *LogStash* for easier for monitoring system performance.
+- ***Filebeat -*** Collects systemwide file changes by monitoring log events and forwarding that information to ElasticSearch and LogStash for indexing and centralizing the log data.
+- ***Metricbeat -*** Collects system metrics from services and applications that are running on the server and outputs them into *ElasticSearch* and *LogStash* for easier for monitoring system performance.
 
 ### Using the Playbooks
 In order to use the playbook, you will need to have an *Ansible control node* already configured. Assuming you have such a control node provisioned: 
@@ -129,7 +129,7 @@ SSH into the control node and follow the steps below:
 
 - Copy the ***[filebeat-install.yml](Ansible/Scripts/filebeat-install.yml)*** and the ***[filebeatconfig.yml](Ansible/Scripts/filebeatconfig.yml)*** to the **/etc/ansible/files folder**
 - Run ***[ansible-playbook install-filebeat.yml](Images/Filebeat/filebeat-install.jpg)*** to run the installation process for filebeat
-- Navigate to ***[http://<ELK Stack VM Public IP*>*:5601/app/kibana#/home](Images/Kibana/KibanaHome1.jpg)***
+- Navigate to ***[http://ELK Stack VM Public IP>:5601/app/kibana#/home](Images/Kibana/KibanaHome1.jpg)***
 - Click on the ***[Add log data tab](Images/Kibana/Add_log_data.jpg)***
 - Then go to the ***[System logs window](Images/Kibana/System_logs.jpg)***
 - Scroll to the bottom of the page, to the ***[Module Status](Images/Kibana/Mod_status.jpg)***
