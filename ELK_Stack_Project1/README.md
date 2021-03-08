@@ -117,7 +117,6 @@ SSH into the control node and follow the steps below:
 - Run ***[ansible-playbook elk-install.yml](Images/Elk/elk-install.jpg)*** to run the playbook installation process
 - Run ***[curl localhost/setup.php](Images/VM/localhost_elk.jpg)*** before leaving the command prompt to make certain you are getting output.
 - Navigate to ***[http://<ELK Stack VM Public IP*>*:5601/app/kibana#/home](Images/Kibana/KibanaHome1.jpg)*** to check that the installation worked as expected.
-- 
  
 ### Installing Filebeat 
 
