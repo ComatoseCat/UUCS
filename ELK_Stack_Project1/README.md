@@ -42,9 +42,9 @@ Integrating an *ELK server* allows administrators to easily monitor the vulnerab
 ***What does Filebeat watch for?*** *Filebeat* is a logging agent that is installed on a client machine generating logs. *Filebeat* tails the log files and forwards the data into *Logstash* for advanced processing or *Elasticsearch* for indexing. It watches for changing file hashes in the filesystem and logs the changes and when it was changed.
 
 ***What does Metricbeat record?*** *Metricbeat* is used to record and collect metrics and statistics from the operating system and turns the output into charts and graphs that simplify understanding and analyzing the data.
-
-***The configuration details of each machine may be found below.***
 <div style="page-break-after: always"></div>
+***The configuration details of each machine may be found below.***
+
 | Name          | Function  | IP Address                       | Operating System    |
 |---------------|-----------|----------------------------------|---------------------|
 | Jump Box      | Gateway   | 10.0.0.8, 13.77.172.55           | Ubuntu 18.04 LTS    |
