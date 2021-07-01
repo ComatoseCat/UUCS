@@ -17,7 +17,7 @@ These files have been tested and used to generate a live *ELK deployment* on ***
 - [Filebeat Configuration YAML File](Ansible/Scripts/filebeatconfig.yml)
 - [Metricbeat Installation YAML File](Ansible/Scripts/metricbeat-install.yml)
 - [Metricbeat Configuration YAML File](Ansible/Scripts/metricbeatconfig.yml)
-
+<div style="page-break-after: always"></div>
 This document contains the following details:
 - Description of the Topology
 - Access Policies
@@ -44,7 +44,7 @@ Integrating an *ELK server* allows administrators to easily monitor the vulnerab
 ***What does Metricbeat record?*** *Metricbeat* is used to record and collect metrics and statistics from the operating system and turns the output into charts and graphs that simplify understanding and analyzing the data.
 
 ***The configuration details of each machine may be found below.***
-
+<div style="page-break-after: always"></div>
 | Name          | Function  | IP Address                       | Operating System    |
 |---------------|-----------|----------------------------------|---------------------|
 | Jump Box      | Gateway   | 10.0.0.8, 13.77.172.55           | Ubuntu 18.04 LTS    |
